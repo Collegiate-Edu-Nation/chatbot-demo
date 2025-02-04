@@ -1854,39 +1854,49 @@ var sb_instagram_js_options = {"font_method":"svg","resized_url":"https:\/\/edu-
 		<!-- Chatbot -->
 		<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 		<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-		<df-messenger
-		project-id="winged-acolyte-427514-u4"
-		agent-id="3b3dbf86-025c-4ce3-a25c-5192a6852ca6"
-		language-code="en"
-		max-query-length="-1">
-		<df-messenger-chat-bubble
-		chat-title-icon="https://storage.googleapis.com/centhia_logo/1.png"
-		chat-title="">
-		</df-messenger-chat-bubble>
-		</df-messenger>
+  		<df-messenger
+      		project-id="winged-acolyte-427514-u4"
+      		agent-id="3b3dbf86-025c-4ce3-a25c-5192a6852ca6"
+      		language-code="en"
+      		max-query-length="-1">
+      		<df-messenger-chat-bubble
+      		    chat-title-icon="https://storage.googleapis.com/centhia_logo/1.png"
+          		chat-title="">
+      		</df-messenger-chat-bubble>
+	    </df-messenger>
 		<style>
 		df-messenger {
+		    /* Positioning */
 			z-index: 999;
 			position: fixed;
-			--df-messenger-font-color: #000;
-			--df-messenger-font-family: Inter;
-			--df-messenger-focus-color: #60164c;
-			--df-messenger-chat-background: #f3f6fc;
-			--df-messenger-message-user-background: #d1eefc;
-			--df-messenger-message-bot-background: #ffffff;
-			--df-messenger-send-icon-color: #60164c;
-			--df-messenger-send-icon-color-hover: #60164c;
-			--df-messenger-send-icon-color-focus: #60164c;
-			--df-messenger-titlebar-icon-width: 100px;
-			--df-messenger-titlebar-icon-height: 23px;
-			--df-messenger-titlebar-icon-font-color: #60164c;
-			--df-messenger-chat-bubble-icon-color: #60164c;
-			--df-messenger-chat-scroll-button-background: #fafafa;
-			--df-messenger-chat-scroll-button-color: white;
-			--df-messenger-chat-scroll-button-font-color: #60164c;
-			--df-messenger-input-box-focus-border: 2px solid #60164c;
 			bottom: 16px;
 			right: 16px;
+			
+			/* Base styling */
+			--df-messenger-font-color: #000;
+			--df-messenger-font-family: Inter;
+			--df-messenger-chat-background: #f3f6fc;
+			--cen-purple: #60164c;
+
+			/* Titlebar icon sizing */
+			--df-messenger-titlebar-icon-width: 100px;
+			--df-messenger-titlebar-icon-height: 23px;
+	
+			/* Message colors */
+			--df-messenger-message-user-background: #d1eefc;
+			--df-messenger-message-bot-background: #ffffff;
+
+			/* Icon and border colors */
+			--df-messenger-chat-bubble-icon-color: var(--cen-purple);
+			--df-messenger-titlebar-icon-font-color: var(--cen-purple);
+			--df-messenger-chat-scroll-button-background: #fafafa;
+			--df-messenger-chat-scroll-button-color: white;
+			--df-messenger-chat-scroll-button-font-color: var(--cen-purple);
+			--df-messenger-focus-color: var(--cen-purple);
+			--df-messenger-input-box-focus-border: 2px solid var(--cen-purple);
+			--df-messenger-send-icon-color: var(--cen-purple);
+			--df-messenger-send-icon-color-hover: var(--cen-purple);
+			--df-messenger-send-icon-color-focus: var(--cen-purple);
 		}
 		</style>
 		<!-- / Chatbot -->	
